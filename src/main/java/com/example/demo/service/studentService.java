@@ -17,4 +17,6 @@ student saveStudent(student student);
 	student updateStudent(student student);
 	
 	void deleteStudentById(Long id);
+	
+    List<student> getfirstName(String name); 
 }

@@ -27,7 +27,7 @@ private repoJPA studentRepo ;
   public List<student> getAllStudents(){
 	  return studentRepo.findAll();
   }
-
+  
 @Override
 public student saveStudent(student student) {
 	
@@ -52,5 +52,11 @@ public void deleteStudentById(Long id) {
 	// TODO Auto-generated method stub
 	studentRepo.deleteById(id);
 	
+}
+@Override
+public List<student> getfirstName(String name) {
+	
+	// TODO Auto-generated method stub
+	return studentRepo.getfirstName(name);
 }
 }
