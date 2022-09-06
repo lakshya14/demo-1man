@@ -36,6 +36,16 @@ public class restController {
 		
 	}
 	
+	@GetMapping("/students/firstName")
+	public String studentName(Model model) {
+		
+		// create student object to hold student form data
+		student Stud = new student();
+		model.addAttribute("student", Stud);
+		return "students";
+		
+	}
+	
 	@PostMapping("/students")
 	public String saveStudent(@ModelAttribute("student") student stud) {
 		sService.saveStudent(stud);

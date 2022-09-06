@@ -10,7 +10,7 @@ import com.example.demo.model.student;
 
 public interface studentService {
     List<student> getAllStudents();
-student saveStudent(student student);
+    student saveStudent(student student);
 	
 	student getStudentById(Long id);
 	
