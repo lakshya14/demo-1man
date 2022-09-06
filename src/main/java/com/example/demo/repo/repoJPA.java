@@ -10,5 +10,5 @@ import com.example.demo.model.student;
 
 public interface repoJPA extends JpaRepository<student,Long>{
 	@Query(value = "SELECT * FROM student WHERE firstName < :firstName", nativeQuery = true)
-    public List<student> getProductsWithMaxPrice(String firstName);
+    public List<student> getfirstName(String firstName);
 }
